@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Final Project NOwaste</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="navbar">
+        <input type="checkbox" id="navbar-check">
+        <div class="navbar-head">
+          <div class="navbar-logo">
+            <a href="index.html" class="logo">n<i class="fa fa-ban"></i>waste</a>
+          </div>
+        </div>
+        <div class="navbar-button" id="menu-nav">
+          <label for="navbar-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="links-navbar">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="tips.html">Solutions</a>
+          <a href="app.html">App</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="homepage-container">
+      <div class="msg-container">
+        <div id="slider">
+          <div class="msg-col">
+            <h1>Our Goal</h1>
+            <p>
+            Our goal is to open people's minds about food waste.
+            We desire to educate society on how to get the full benefit of their food so they don't have to throw food unnecessary.
+            We care for our environment and by reaching out to people about this concerning problem we hope that the ones that hear
+            us will become a part of us and join our journey.
+            </p>
+              <a href="about.html">Learn More</a>
+          </div>
+          <div class="msg-col">
+            <h1>Solutions</h1>
+            <p>Here you can find some of our solutions on how you can avoid wasting food.
+            Some of the information we cover here is how to make food last longer,
+            what you can do to avoid over purchasing food,
+            and recipes that uses most parts of the produce,
+            all while maintaining the same taste and quality.</p>
+              <a href="tips.html">Learn More</a>
+          </div>
+          <div class="msg-col">
+            <h1>App</h1>
+            <p>Our app is meant as a utility in your healthy and optamized day-to-day life.
+            Whether you're in the kitchen, prepping a meal, or you're out grocery shopping,
+            our app is there to assist you. We provide information that will help take the small steps
+            needed to achieve personalized goals. </p>
+              <a href="app.html">Learn More</a>
+          </div>
+          <div class="msg-col">
+            <h1>Contact</h1>
+            <p>We are an information site that works for a more sustainable future.
+              Do you want to support us and have your ads on our websites
+              and in our app? Send us an email! </p>
+              <a href="contact.html">Learn More</a>
+          </div>
+          </div>
+        </div>
+        <div class="scroll" id="scrollOne">
+          <a onclick="scrollDown('contentMain'); return false;" href="#" title="Scroll down" class="sectionScroll">!!!!<br>!!!!<br>!!!!</a>
+        </div>
+      </div>
+
+      <button onclick="backTopFunc()" id="buttonTop" title="Back to top"><i class="fa fa-angle-double-up"></i></button>
+
+      <script type="text/javascript" src="scroll.js"></script>
+
+      <div class="controller">
+        <div id="linje1" title="1. Slide"></div>
+        <div id="linje2" title="2. Slide"></div>
+        <div id="linje3" title="3. Slide"></div>
+        <div id="linje4" title="4. Slide"></div>
+        <div id="active" title="5. Slide"></div>
+      </div>
+
+      <section class="content-main" id="contentMain">
+        <div class="picture-wrapper">
+          <img src="img/app1.png" alt="App">
+        </div>
+        <div class="h-wrapper">
+          <a href="app.html" title="Learn more about our app">the n<span><i class="fa fa-ban" aria-hidden="true"></span></i>waste app</a>
+        </div>
+        <div class="text-wrapper">
+          <p>Our app is meant as a utility in your healthy and optamized day-to-day life.
+          Whether you're in the kitchen, prepping a meal, or you're out grocery shopping,
+          our app is there to assist you. We provide information that will help take the small steps
+          needed to achieve personalized goals.</p>
+        </div>
+        <div class="app-main-wrapper">
+          <a href="app.html" title="Learn More">Learn more</a>
+        </div>
+        <div class="app-main-wrapper" id="solutionsBtn">
+          <a href="tips.html" title="Our Solutions">Our Solutions</a>
+        </div>
+      </section>
+
+      <script type="text/javascript">
+
+        var slider = document.getElementById('slider');
+        var active = document.getElementById('active');
+        var linje1 = document.getElementById('linje1');
+        var linje2 = document.getElementById('linje2');
+        var linje3 = document.getElementById('linje3');
+        var linje4 = document.getElementById('linje4');
+
+        linje1.onclick = function(){
+          slider.style.transform = 'translateX(0)';
+          active.style.top = '0px';
+        }
+        linje2.onclick = function(){
+          slider.style.transform = 'translateX(-25%)';
+          active.style.top = '80px';
+        }
+        linje3.onclick = function(){
+          slider.style.transform = 'translateX(-50%)';
+          active.style.top = '160px';
+        }
+        linje4.onclick = function(){
+          slider.style.transform = 'translateX(-75%)';
+          active.style.top = '240px';
+        }
+
+      </script>
+
+      <noscript class="noscript-main">
+        Javascript not enabled.
+      </noscript>
+
+    </div>
+
+  </body>
+</html>
